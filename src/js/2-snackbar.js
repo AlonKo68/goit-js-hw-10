@@ -8,9 +8,9 @@ function handlerSubmit(event) {
     event.preventDefault();
 
     const delay = parseInt(event.target.elements.delay.value);
-    console.log(delay);
+
     let state = document.querySelector('input[name="state"]:checked').value;
-    console.log(state);
+
 
     const promise = new Promise((res, rej) => {
         setTimeout(() => {
